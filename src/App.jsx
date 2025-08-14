@@ -103,7 +103,7 @@ const App = () => {
 						<h1>{winner==1?"O Won 🥳":(winner==2?"X Won 🥳":"Result:🧐")}</h1>
 					</div>
 					<div><Grid val={val} clickhandle={(i)=>clickhandle(i)}/></div>
-					<History history={history} backtrack={(index)=>backtrack(index)}/>
+					<History history={history} backtrack={(index)=>backtrack(index)} curr={curr} />
 				</div>
 			</div>
 		</>
